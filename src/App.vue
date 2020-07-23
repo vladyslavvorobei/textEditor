@@ -9,7 +9,7 @@
     <text-editor-control titleSelect="Колір фону"
                          type="backColor"
                          :styleObject="backgroundColor"></text-editor-control>
-    <my-editor :content="text" @update="text = $event"></my-editor>
+    <my-editor :content="text" @update="text = $event" @editor="editor"></my-editor>
   </div>
 </template>
 
@@ -23,6 +23,7 @@
     data() {
       return {
         text: 'Hi My lovely little Pony',
+        editor: '',
         fontSize: {
           1: 'Малюсенький',
           2: 'Маленький',

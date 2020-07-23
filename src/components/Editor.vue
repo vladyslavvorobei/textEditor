@@ -1,6 +1,5 @@
 <template>
-  <div contenteditable="true" @input="update">
-  </div>
+  <div contenteditable="true" @input="update"></div>
 </template>
 
 <script>
